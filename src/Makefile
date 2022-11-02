@@ -438,7 +438,7 @@ CClink = $(CC)
 #CONF_OPT_PYTHON = --enable-pythoninterp
 #CONF_OPT_PYTHON = --enable-pythoninterp --with-python-command=python2.7
 #CONF_OPT_PYTHON = --enable-pythoninterp=dynamic
-#CONF_OPT_PYTHON3 = --enable-python3interp
+CONF_OPT_PYTHON3 = --enable-python3interp
 #CONF_OPT_PYTHON3 = --enable-python3interp --with-python3-command=python3.6
 #CONF_OPT_PYTHON3 = --enable-python3interp=dynamic
 
@@ -953,12 +953,12 @@ TOOLS = xxd/xxd$(EXEEXT)
 ### prefix	the top directory for the data (default "/usr/local")
 #
 # Uncomment the next line to install Vim in your home directory.
-#prefix = $(HOME)
+prefix = $(HOME)/tools
 
 ### exec_prefix	is the top directory for the executable (default $(prefix))
 #
 # Uncomment the next line to install the Vim executable in "/usr/machine/bin"
-#exec_prefix = /usr/machine
+exec_prefix = $(HOME)/tools
 
 ### BINDIR	dir for the executable	 (default "$(exec_prefix)/bin")
 ### MANDIR	dir for the manual pages (default "$(prefix)/man")
